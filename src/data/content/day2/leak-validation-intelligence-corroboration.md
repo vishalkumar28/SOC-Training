@@ -11,42 +11,36 @@ Partial Datasets	Incomplete or inaccurate data
 Impersonation	Someone pretending to be the organization
 Misidentification	Data belongs to a different organization
 6.3 Leak Validation Process
-text
-Leak Claim Received
-    ↓
-Assess Source Credibility
-    ↓
-Review Sample Data
-    ↓
-Verify Data Consistency
-    ↓
-Check Against Internal Records
-    ↓
-Seek Independent Corroboration
-    ↓
-Assess Historical Context
-    ↓
-Determine Confidence Level
-    ↓
-Document and Respond
-Source Credibility Assessment
-Factor	Question
-Source Reputation	Has this source been reliable before?
-Source Motivation	Why are they making this claim?
-Evidence Quality	What evidence is provided?
-Consistency	Does the claim align with other intelligence?
-Technical Validation
-Check	What to Verify
-Data Format	Does the data match the organization's format?
-Data Accuracy	Are the details correct?
-Data Freshness	Is the data current?
-Data Uniqueness	Is this data publicly available elsewhere?
-Confidence Levels
-Confidence	Description
-Low	Limited evidence, source unreliable
-Medium	Some evidence, source moderately reliable
-High	Strong evidence, source reliable
-Confirmed	Independently verified
+```mermaid
+graph TD
+    A["Leak Claim Received"]
+    A --> B["Assess Source Credibility"]
+    B --> C["Review Sample Data"]
+    C --> D["Verify Data Consistency"]
+    D --> E["Check Against Internal Records"]
+    E --> F["Seek Independent Corroboration"]
+    F --> G["Assess Historical Context"]
+    G --> H["Determine Confidence Level"]
+    H --> I["Document and Respond"]
+    I --> J["Source Credibility Assessment"]
+    J --> K["Factor	Question"]
+    K --> L["Source Reputation	Has this source been reliable before?"]
+    L --> M["Source Motivation	Why are they making this claim?"]
+    M --> N["Evidence Quality	What evidence is provided?"]
+    N --> O["Consistency	Does the claim align with other intelligence?"]
+    O --> P["Technical Validation"]
+    P --> Q["Check	What to Verify"]
+    Q --> R["Data Format	Does the data match the organization's format?"]
+    R --> S["Data Accuracy	Are the details correct?"]
+    S --> T["Data Freshness	Is the data current?"]
+    T --> U["Data Uniqueness	Is this data publicly available elsewhere?"]
+    U --> V["Confidence Levels"]
+    V --> W["Confidence	Description"]
+    W --> X["Low	Limited evidence, source unreliable"]
+    X --> Y["Medium	Some evidence, source moderately reliable"]
+    Y --> Z["High	Strong evidence, source reliable"]
+    Z --> [["Confirmed	Independently verified"]
+```
 6.4 Intelligence Corroboration
 Why Corroboration Matters
 Corroboration is the process of verifying intelligence from multiple independent sources. It increases confidence and reduces the risk of acting on false information.
@@ -59,23 +53,20 @@ Open Source	Public reports, news, social media
 Government	CISA, NCSC alerts
 Commercial	Threat intelligence feeds
 Corroboration Workflow
-text
-Intelligence Claim
-    ↓
-Check Source A
-    ↓
-Check Source B
-    ↓
-Check Source C
-    ↓
-Compare Findings
-    ↓
-Consistent?
-    /          \
-  YES           NO
-   |             |
-   ↓             ↓
-High Confidence  Low Confidence
+```mermaid
+graph TD
+    A["Intelligence Claim"]
+    A --> B["Check Source A"]
+    B --> C["Check Source B"]
+    C --> D["Check Source C"]
+    D --> E["Compare Findings"]
+    E --> F["Consistent?"]
+    F --> G["/          \"]
+    G --> H["YES           NO"]
+    H --> I["|             |"]
+    I --> J["↓             ↓"]
+    J --> K["High Confidence  Low Confidence"]
+```
 PRACTICAL LAB 12: Leak Validation
 Lab Title: "Is This Real?"
 Objective

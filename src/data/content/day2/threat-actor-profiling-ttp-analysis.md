@@ -30,32 +30,26 @@ Tactic	Initial Access – Gain entry to the network
 Technique	Spearphishing Attachment – Send malicious email
 Procedure	Send email with "Invoice.doc" containing macro
 TTP Hierarchy
-text
-TACTIC: Initial Access
-    ↓
-TECHNIQUE: Spearphishing Attachment (T1566.001)
-    ↓
-PROCEDURE: Send email with malicious Word document
-    ↓
-PROCEDURE: Document contains macro that downloads payload
-    ↓
-PROCEDURE: Payload is Cobalt Strike beacon
+```mermaid
+graph TD
+    A["TACTIC: Initial Access"]
+    A --> B["TECHNIQUE: Spearphishing Attachment \(T1566.001\)"]
+    B --> C["PROCEDURE: Send email with malicious Word document"]
+    C --> D["PROCEDURE: Document contains macro that downloads payload"]
+    D --> E["PROCEDURE: Payload is Cobalt Strike beacon"]
+```
 7.3 Threat Actor Profiling
 Profiling Process
-text
-Collect Intelligence
-    ↓
-Identify TTPs
-    ↓
-Map to MITRE ATT&CK
-    ↓
-Assess Motivation
-    ↓
-Determine Targeting
-    ↓
-Create Profile
-    ↓
-Share with Team
+```mermaid
+graph TD
+    A["Collect Intelligence"]
+    A --> B["Identify TTPs"]
+    B --> C["Map to MITRE ATT&CK"]
+    C --> D["Assess Motivation"]
+    D --> E["Determine Targeting"]
+    E --> F["Create Profile"]
+    F --> G["Share with Team"]
+```
 Profile Components
 Component	Description
 Alias	Known names for the actor

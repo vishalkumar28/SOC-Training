@@ -7,6 +7,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Target, TerminalSquare, Info } from 'lucide-react';
 import { InvestigationConsole } from '@/components/interactive/InvestigationConsole';
 import { OperationShadowTrace } from '@/components/interactive/OperationShadowTrace';
+import { MermaidDiagram } from '@/components/ui/MermaidDiagram';
 
 interface PageProps {
   params: Promise<{
@@ -325,6 +326,10 @@ export default async function CoursePage(props: PageProps) {
             code: ({node, className, ...props}) => {
               const match = /language-(\w+)/.exec(className || '');
               const isInline = !match && !String(props.children).includes('\n');
+              
+              if (match && match[1] === 'mermaid') {
+                return <MermaidDiagram chart={String(props.children)} />
+              }
               
               if (isInline) {
                 return <code className="bg-secondary px-1.5 py-0.5 rounded-md text-sm font-mono text-primary" {...props} />

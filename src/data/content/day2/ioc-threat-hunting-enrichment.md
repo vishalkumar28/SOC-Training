@@ -23,27 +23,23 @@ Approach	Reactive	Proactive
 Focus	Known threats	Unknown and advanced threats
 2.2 IOC-Based Hunting
 Workflow
-text
-IOC (from intelligence or analysis)
-    ↓
-Enrich IOC (add context)
-    ↓
-Search internal telemetry
-    ↓
-Identify potential matches
-    ↓
-Validate findings
-    ↓
-Assess scope
-    ↓
-Document and respond
-Hunting Techniques
-Technique	Description
-IOC Search	Search for known indicators in logs
-Behavioral Analysis	Look for suspicious patterns
-Anomaly Detection	Find deviations from normal
-ATT&CK Mapping	Search for techniques used by known groups
-Data Mining	Analyze large datasets for hidden patterns
+```mermaid
+graph TD
+    A["IOC \(from intelligence or analysis\)"]
+    A --> B["Enrich IOC \(add context\)"]
+    B --> C["Search internal telemetry"]
+    C --> D["Identify potential matches"]
+    D --> E["Validate findings"]
+    E --> F["Assess scope"]
+    F --> G["Document and respond"]
+    G --> H["Hunting Techniques"]
+    H --> I["Technique	Description"]
+    I --> J["IOC Search	Search for known indicators in logs"]
+    J --> K["Behavioral Analysis	Look for suspicious patterns"]
+    K --> L["Anomaly Detection	Find deviations from normal"]
+    L --> M["ATT&CK Mapping	Search for techniques used by known groups"]
+    M --> N["Data Mining	Analyze large datasets for hidden patterns"]
+```
 2.3 IOC Enrichment Process
 Step 1: Identify the IOC
 What is the indicator? (IP, domain, hash, etc.)
@@ -83,14 +79,6 @@ Perform proactive threat hunting using IOCs from threat intelligence.
 Scenario
 You have received threat intelligence about a new malware campaign. The intelligence includes the following IOCs:
 
-text
-Hash (SHA-256): e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-Domain: malware-distribution-network.com
-IP: 203.0.113.45
-URL: http://malware-distribution-network.com/payload.exe
-Your task is to hunt for these IOCs in your environment.
-
-Dataset (Simulated SIEM Events)
 text
 [2024-11-15 09:20:00] DNS: Query for malware-distribution-network.com from 192.168.1.100
 [2024-11-15 09:21:00] Firewall: Connection from 192.168.1.100 to 203.0.113.45 port 80

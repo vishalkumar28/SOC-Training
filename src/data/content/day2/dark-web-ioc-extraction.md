@@ -18,22 +18,17 @@ Actor Aliases	APT29, Wizard Spider, Evil Corp
 Malware Names	Emotet, Cobalt Strike, LockBit
 File Names	payload.exe, update.ps1
 5.3 IOC Extraction Process
-text
-Review Intelligence Report
-    ↓
-Identify Potential IOCs
-    ↓
-Classify Each IOC by Type
-    ↓
-Record IOC with Context
-    ↓
-Enrich Each IOC
-    ↓
-Validate Confidence
-    ↓
-Create IOC Table
-    ↓
-Share with SOC Team
+```mermaid
+graph TD
+    A["Review Intelligence Report"]
+    A --> B["Identify Potential IOCs"]
+    B --> C["Classify Each IOC by Type"]
+    C --> D["Record IOC with Context"]
+    D --> E["Enrich Each IOC"]
+    E --> F["Validate Confidence"]
+    F --> G["Create IOC Table"]
+    G --> H["Share with SOC Team"]
+```
 PRACTICAL LAB 11: Dark Web IOC Extraction
 Lab Title: "Extract the Indicators"
 Objective

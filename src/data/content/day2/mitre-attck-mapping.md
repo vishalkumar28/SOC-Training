@@ -47,26 +47,22 @@ Persistence	Scheduled Task	T1053.005
 C2	Application Layer Protocol	T1071
 9.3 Evidence-Based Mapping
 Mapping Process
-text
-Observed Behavior
-    ↓
-Interpret the Behavior
-    ↓
-Identify the Tactic (Why)
-    ↓
-Identify the Technique (How)
-    ↓
-Identify Sub-technique (Specific)
-    ↓
-Document with Evidence
-    ↓
-Assess Confidence
-Mapping Example
-Observed Behavior	Interpretation	Tactic	Technique
-PowerShell with encoded command	Attacker running commands	Execution	PowerShell (T1059.001)
-Scheduled task created	Attacker maintaining access	Persistence	Scheduled Task (T1053.005)
-Connection to C2 server	Attacker controlling malware	C2	Application Layer Protocol (T1071)
-Files encrypted	Attacker causing damage	Impact	Data Encrypted for Impact (T1486)
+```mermaid
+graph TD
+    A["Observed Behavior"]
+    A --> B["Interpret the Behavior"]
+    B --> C["Identify the Tactic \(Why\)"]
+    C --> D["Identify the Technique \(How\)"]
+    D --> E["Identify Sub-technique \(Specific\)"]
+    E --> F["Document with Evidence"]
+    F --> G["Assess Confidence"]
+    G --> H["Mapping Example"]
+    H --> I["Observed Behavior	Interpretation	Tactic	Technique"]
+    I --> J["PowerShell with encoded command	Attacker running commands	Execution	PowerShell \(T1059.001\)"]
+    J --> K["Scheduled task created	Attacker maintaining access	Persistence	Scheduled Task \(T1053.005\)"]
+    K --> L["Connection to C2 server	Attacker controlling malware	C2	Application Layer Protocol \(T1071\)"]
+    L --> M["Files encrypted	Attacker causing damage	Impact	Data Encrypted for Impact \(T1486\)"]
+```
 PRACTICAL LAB 15: MITRE ATT&CK Mapping
 Lab Title: "Map the Attack"
 Objective

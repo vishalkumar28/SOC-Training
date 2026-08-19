@@ -36,18 +36,15 @@ Marketplaces	Selling stolen data, malware, exploits
 Leak Sites	Publishing stolen data
 Chat Platforms	Real-time communication
 Ransomware Ecosystem on the Dark Web
-text
-Ransomware Group
-    ↓
-Compromises Victim
-    ↓
-Encrypts Data
-    ↓
-Posts Leak on Dark Web
-    ↓
-Negotiates Ransom
-    ↓
-If Not Paid → Data Published
+```mermaid
+graph TD
+    A["Ransomware Group"]
+    A --> B["Compromises Victim"]
+    B --> C["Encrypts Data"]
+    C --> D["Posts Leak on Dark Web"]
+    D --> E["Negotiates Ransom"]
+    E --> F["If Not Paid → Data Published"]
+```
 4.3 Defensive Dark Web Intelligence
 What is Defensive Dark Web Intelligence?
 Defensive dark web intelligence is the legal and ethical monitoring of dark web sources to identify threats to an organization.

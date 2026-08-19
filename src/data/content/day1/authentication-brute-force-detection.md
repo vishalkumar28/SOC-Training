@@ -22,30 +22,6 @@ Detection	High volume of 4625 events for same account
 Example:
 
 text
-Account: jsmith
-Attempts: password123, Password1, jsmith2024, letmein, ...
-100+ failures
-Password Spraying
-Aspect	Description
-What	Trying one common password against many accounts
-Goal	Find accounts with weak passwords
-Signature	One failure per account, many accounts
-Detection	4625 events for many accounts from same IP
-Example:
-
-text
-Password: Winter2024!
-Accounts: jsmith, bjones, mwilliams, ...
-1 failure per account, many accounts
-Credential Stuffing
-Aspect	Description
-What	Using credentials stolen from another breach
-Goal	Access accounts using reused passwords
-Signature	Failures for many accounts, then success on some
-Detection	Login attempts from unusual locations
-Example:
-
-text
 Credentials from Breach: jsmith/P@ssw0rd123, bjones/Summer2023, ...
 Testing against corporate accounts
 Key Differences
@@ -55,38 +31,16 @@ Password Spraying	✗ (same password)	✓	✗
 Credential Stuffing	✓ (from breach)	✓	✗
 3.3 Detection Logic
 Brute Force Detection
-text
-Many failed attempts
-        ↓
-Same account?
-        ↓ (YES)
-Same source IP?
-        ↓ (YES)
-Threshold exceeded? (e.g., 10+ failures in 5 minutes)
-        ↓ (YES)
-→ BRUTE FORCE DETECTED
-Password Spraying Detection
-text
-Many failed attempts
-        ↓
-Different accounts?
-        ↓ (YES)
-Same source IP?
-        ↓ (YES)
-Same failure reason?
-        ↓ (YES)
-→ PASSWORD SPRAYING DETECTED
-Compromised Credential Detection
-text
-Failed attempts
-        ↓
-Followed by successful login
-        ↓
-From a different source IP?
-        ↓ (YES)
-During unusual hours?
-        ↓ (YES)
-→ COMPROMISED CREDENTIALS SUSPECTED
+```mermaid
+graph TD
+    A["Failed attempts"]
+    A --> B["Followed by successful login"]
+    B --> C["From a different source IP?"]
+    C --> D["↓ \(YES\)"]
+    D --> E["During unusual hours?"]
+    E --> F["↓ \(YES\)"]
+    F --> G["→ COMPROMISED CREDENTIALS SUSPECTED"]
+```
 3.4 Threshold Concepts
 Detection thresholds depend on:
 

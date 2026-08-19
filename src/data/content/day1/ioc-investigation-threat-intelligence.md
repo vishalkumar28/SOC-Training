@@ -53,50 +53,47 @@ Has it been seen in other attacks?
 What is the confidence level?
 
 IOC Enrichment Workflow
-text
-Raw IOC
-    ↓
-Query Intelligence Sources
-    ↓
-Collect Additional Information
-    ↓
-Correlate with Other IOCs
-    ↓
-Assess Confidence
-    ↓
-Document Enriched IOC
-Intelligence Sources
-VirusTotal
-Aspect	Description
-Purpose	File hash reputation and malware detection
-What it provides	Detection ratio, malware family, file metadata
-How SOC uses it	Check if a file is known malware
-Limitations	Unknown files may still be malicious
-Privacy	File hashes are public
-AbuseIPDB
-Aspect	Description
-Purpose	IP address reputation
-What it provides	Abuse reports, categories, confidence score
-How SOC uses it	Check if an IP is known for malicious activity
-Limitations	Relies on user reports
-AlienVault OTX
-Aspect	Description
-Purpose	Open threat intelligence exchange
-What it provides	IOCs, pulses, threat intelligence
-How SOC uses it	Research IOCs and find related indicators
-Limitations	Community-driven, quality varies
-URLScan
-Aspect	Description
-Purpose	URL and website analysis
-What it provides	Screenshots, network requests, behavior
-How SOC uses it	Investigate suspicious URLs
-Limitations	May not execute complex JavaScript
-MalwareBazaar
-Aspect	Description
-Purpose	Malware sample repository
-What it provides	Malware samples, tags, signatures
-How SOC uses it	Research malware families
-Limitations	Samples may be old
+```mermaid
+graph TD
+    A["Raw IOC"]
+    A --> B["Query Intelligence Sources"]
+    B --> C["Collect Additional Information"]
+    C --> D["Correlate with Other IOCs"]
+    D --> E["Assess Confidence"]
+    E --> F["Document Enriched IOC"]
+    F --> G["Intelligence Sources"]
+    G --> H["VirusTotal"]
+    H --> I["Aspect	Description"]
+    I --> J["Purpose	File hash reputation and malware detection"]
+    J --> K["What it provides	Detection ratio, malware family, file metadata"]
+    K --> L["How SOC uses it	Check if a file is known malware"]
+    L --> M["Limitations	Unknown files may still be malicious"]
+    M --> N["Privacy	File hashes are public"]
+    N --> O["AbuseIPDB"]
+    O --> P["Aspect	Description"]
+    P --> Q["Purpose	IP address reputation"]
+    Q --> R["What it provides	Abuse reports, categories, confidence score"]
+    R --> S["How SOC uses it	Check if an IP is known for malicious activity"]
+    S --> T["Limitations	Relies on user reports"]
+    T --> U["AlienVault OTX"]
+    U --> V["Aspect	Description"]
+    V --> W["Purpose	Open threat intelligence exchange"]
+    W --> X["What it provides	IOCs, pulses, threat intelligence"]
+    X --> Y["How SOC uses it	Research IOCs and find related indicators"]
+    Y --> Z["Limitations	Community-driven, quality varies"]
+    Z --> [["URLScan"]
+    [ --> \["Aspect	Description"]
+    \ --> ]["Purpose	URL and website analysis"]
+    ] --> ^["What it provides	Screenshots, network requests, behavior"]
+    ^ --> _["How SOC uses it	Investigate suspicious URLs"]
+    _ --> `["Limitations	May not execute complex JavaScript"]
+    ` --> a["MalwareBazaar"]
+    a --> b["Aspect	Description"]
+    b --> c["Purpose	Malware sample repository"]
+    c --> d["What it provides	Malware samples, tags, signatures"]
+    d --> e["How SOC uses it	Research malware families"]
+    e --> f["Limitations	Samples may be old"]
+```
 PRACTICAL LAB 5: IOC Investigation
 Lab Title: "Follow the Indicator"
 Objective

@@ -6,10 +6,6 @@ Risk is the potential for loss or damage when a threat exploits a vulnerability.
 
 Risk Formula
 text
-Risk = Impact × Likelihood
-But in incident assessment, we consider additional factors:
-
-text
 Risk = Asset Criticality + Impact + Likelihood + Scope + Evidence + Confidence
 10.2 Understanding Confidence
 Confidence Definition

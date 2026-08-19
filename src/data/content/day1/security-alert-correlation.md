@@ -18,38 +18,35 @@ Process-based	Events involving same process	PowerShell execution → Network con
 IOC-based	Events sharing IOCs	Multiple systems connecting to same malicious IP
 6.3 Attack Chain Correlation
 Realistic Attack Example
-text
-[1] 4625: jsmith - Failed login (203.0.113.45)
-        ↓ (50 failures over 10 minutes)
-[2] 4624: jsmith - Successful login (203.0.113.45)
-        ↓ (Attacker now has access)
-[3] 4688: powershell.exe launched by jsmith
-        ↓ (Attacker running commands)
-[4] 4688: payload.exe downloaded and executed
-        ↓ (Malware installed)
-[5] 5156: Network connection to 203.0.113.100
-        ↓ (Command and control)
-[6] 4663: Sensitive file accessed
-        ↓ (Data theft)
-How These Events Form One Story
-Step	Event	Role in Attack
-1	Failed logins	Brute force attempt
-2	Successful login	Attacker gains access
-3	PowerShell execution	Attacker runs commands
-4	Payload execution	Malware deployed
-5	C2 connection	Malware "phones home"
-6	File access	Data theft
-Correlation Questions
-When correlating alerts, ask:
-
-Do these events share a common attribute? (User, IP, host, time)
-
-Do they form a logical sequence?
-
-Is there a temporal relationship?
-
-What is the attack story?
-
+```mermaid
+graph TD
+    A["\(1\) 4625: jsmith - Failed login \(203.0.113.45\)"]
+    A --> B["↓ \(50 failures over 10 minutes\)"]
+    B --> C["\(2\) 4624: jsmith - Successful login \(203.0.113.45\)"]
+    C --> D["↓ \(Attacker now has access\)"]
+    D --> E["\(3\) 4688: powershell.exe launched by jsmith"]
+    E --> F["↓ \(Attacker running commands\)"]
+    F --> G["\(4\) 4688: payload.exe downloaded and executed"]
+    G --> H["↓ \(Malware installed\)"]
+    H --> I["\(5\) 5156: Network connection to 203.0.113.100"]
+    I --> J["↓ \(Command and control\)"]
+    J --> K["\(6\) 4663: Sensitive file accessed"]
+    K --> L["↓ \(Data theft\)"]
+    L --> M["How These Events Form One Story"]
+    M --> N["Step	Event	Role in Attack"]
+    N --> O["1	Failed logins	Brute force attempt"]
+    O --> P["2	Successful login	Attacker gains access"]
+    P --> Q["3	PowerShell execution	Attacker runs commands"]
+    Q --> R["4	Payload execution	Malware deployed"]
+    R --> S["5	C2 connection	Malware \"phones home\""]
+    S --> T["6	File access	Data theft"]
+    T --> U["Correlation Questions"]
+    U --> V["When correlating alerts, ask:"]
+    V --> W["Do these events share a common attribute? \(User, IP, host, time\)"]
+    W --> X["Do they form a logical sequence?"]
+    X --> Y["Is there a temporal relationship?"]
+    Y --> Z["What is the attack story?"]
+```
 PRACTICAL LAB 6: Alert Correlation
 Lab Title: "Connect the Dots"
 Objective

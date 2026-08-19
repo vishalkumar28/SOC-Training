@@ -4,29 +4,24 @@
 External threat intelligence is only valuable if it can be correlated with internal telemetry.
 
 Correlation Workflow
-text
-External Intelligence (IOC)
-    ↓
-Enrich IOC (add context)
-    ↓
-Query Internal SIEM
-    ↓
-Search Historical Telemetry
-    ↓
-Identify Potential Matches
-    ↓
-Validate and Investigate
-    ↓
-Assess Scope and Impact
-    ↓
-Respond if Necessary
-Types of Internal Correlation
-Correlation Type	Description
-DNS Query	Did any system resolve the malicious domain?
-Network Connection	Did any system connect to the malicious IP?
-File Hash	Is the malicious file present on any system?
-Email	Did anyone receive a phishing email?
-Process	Was the malicious process executed?
+```mermaid
+graph TD
+    A["External Intelligence \(IOC\)"]
+    A --> B["Enrich IOC \(add context\)"]
+    B --> C["Query Internal SIEM"]
+    C --> D["Search Historical Telemetry"]
+    D --> E["Identify Potential Matches"]
+    E --> F["Validate and Investigate"]
+    F --> G["Assess Scope and Impact"]
+    G --> H["Respond if Necessary"]
+    H --> I["Types of Internal Correlation"]
+    I --> J["Correlation Type	Description"]
+    J --> K["DNS Query	Did any system resolve the malicious domain?"]
+    K --> L["Network Connection	Did any system connect to the malicious IP?"]
+    L --> M["File Hash	Is the malicious file present on any system?"]
+    M --> N["Email	Did anyone receive a phishing email?"]
+    N --> O["Process	Was the malicious process executed?"]
+```
 8.2 Practical Correlation Example
 External Intelligence
 text
@@ -76,15 +71,6 @@ Scenario
 You have received threat intelligence about a new campaign. Your task is to search your environment for signs of compromise.
 
 Intelligence
-text
-Intelligence Source: CISA Alert AA-2024-11-15
-Threat Actor: DarkVector
-Indicators:
-- Domain: darkvector-c2.xyz
-- IP: 203.0.113.45
-- Hash (SHA-256): e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-- File: update_installer.exe
-SIEM Events (Simulated)
 text
 DNS Logs:
 [2024-11-14 14:23:00] DNS Query: darkvector-c2.xyz from 192.168.1.101
