@@ -9,7 +9,7 @@ export default function MitrePage() {
           <Crosshair className="w-8 h-8 mr-3 text-destructive" /> MITRE ATT&CK Matrix
         </h1>
         <p className="text-xl text-muted-foreground">
-          Explore the Tactics, Techniques, and Procedures (TTPs) mapped during the ACME University incident.
+          Explore the Tactics, Techniques, and Procedures (TTPs) mapped during the PIET [Panipat Institute of Engineering & Technology] incident.
         </p>
       </div>
       

@@ -107,7 +107,7 @@ Objective
 Identify a brute-force attack by analyzing authentication logs and determine whether the attack was successful.
 
 Scenario
-ACME University's SIEM has generated an alert for "Multiple Failed Logins." You need to investigate the logs to determine if a brute-force attack occurred and whether any accounts were compromised.
+PIET [Panipat Institute of Engineering & Technology]'s SIEM has generated an alert for "Multiple Failed Logins." You need to investigate the logs to determine if a brute-force attack occurred and whether any accounts were compromised.
 
 Difficulty
 Beginner

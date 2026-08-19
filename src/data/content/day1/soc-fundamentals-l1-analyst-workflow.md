@@ -266,7 +266,7 @@ Objective
 Learn how to perform basic SOC alert triage by analyzing a sample alert and determining whether it requires escalation.
 
 Scenario
-You are an L1 SOC analyst at ACME University. You receive the following alert from your SIEM:
+You are an L1 SOC analyst at PIET [Panipat Institute of Engineering & Technology]. You receive the following alert from your SIEM:
 
 text
 ALERT ID: SOC-2024-001

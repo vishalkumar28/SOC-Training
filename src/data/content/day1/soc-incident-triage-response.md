@@ -113,7 +113,7 @@ Objective
 Perform complete incident triage and recommend response actions.
 
 Scenario
-You are an L1 SOC analyst at ACME University. You have received the following alert. Perform triage and recommend response.
+You are an L1 SOC analyst at PIET [Panipat Institute of Engineering & Technology]. You have received the following alert. Perform triage and recommend response.
 
 Alert
 text

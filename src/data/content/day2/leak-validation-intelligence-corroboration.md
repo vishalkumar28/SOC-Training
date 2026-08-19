@@ -82,26 +82,26 @@ Objective
 Validate a leak claim and assess confidence.
 
 Scenario
-A dark web source claims that ACME University's data has been leaked. You need to validate the claim.
+A dark web source claims that PIET [Panipat Institute of Engineering & Technology]'s data has been leaked. You need to validate the claim.
 
 Claim Details
 text
 CLAIM RECEIVED:
 Source: Dark Web Forum "CyberLeaks"
-Claim: ACME University student data leaked
+Claim: PIET [Panipat Institute of Engineering & Technology] student data leaked
 Date Claimed: 2024-11-15
 Evidence Provided: Sample of 100 student records
 
 Sample Data (redacted):
 Name: John Doe
 Student ID: S-2024-001
-Email: john.doe@acme.edu
+Email: john.doe@piet.edu
 Major: Computer Science
 GPA: 3.8
 
 Name: Jane Smith
 Student ID: S-2024-002
-Email: jane.smith@acme.edu
+Email: jane.smith@piet.edu
 Major: Business
 GPA: 3.5
 Step-by-Step Procedure
@@ -115,7 +115,7 @@ Step 2: Review Sample Data
 
 Names: Are these real students?
 
-Email format: Does it match ACME's format?
+Email format: Does it match PIET's format?
 
 Student IDs: Do they follow the correct format?
 
@@ -125,13 +125,13 @@ Check against internal records (simulated):
 
 All student IDs match the correct format (S-YYYY-NNN)
 
-Email addresses match ACME's domain
+Email addresses match PIET's domain
 
 Names correspond to known students
 
 Step 4: Check Historical Context
 
-Has ACME had data leaks before?
+Has PIET had data leaks before?
 
 Is this data available elsewhere?
 
@@ -162,7 +162,7 @@ LEAK VALIDATION REPORT
 =====================
 Claim Source: CyberLeaks (Dark Web Forum)
 Claim Date: 2024-11-15
-Claim: ACME University student data leak
+Claim: PIET [Panipat Institute of Engineering & Technology] student data leak
 
 VALIDATION SUMMARY:
 Source credibility: Medium

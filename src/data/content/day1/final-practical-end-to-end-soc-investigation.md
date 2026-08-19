@@ -1,11 +1,11 @@
 # Final Practical End-to-End SOC Investigation
 
-Lab Title: "ACME University Authentication Incident"
+Lab Title: "PIET [Panipat Institute of Engineering & Technology] Authentication Incident"
 Objective
 Perform a complete end-to-end SOC investigation, from alert to report.
 
 Scenario
-ACME University's SIEM has generated multiple alerts. You must investigate all alerts, determine whether an incident occurred, and produce a complete investigation report.
+PIET [Panipat Institute of Engineering & Technology]'s SIEM has generated multiple alerts. You must investigate all alerts, determine whether an incident occurred, and produce a complete investigation report.
 
 Dataset
 text

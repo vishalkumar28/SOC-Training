@@ -58,7 +58,7 @@ Objective
 Assess the risk and confidence for a security incident.
 
 Scenario
-You have investigated an incident at ACME University and have the following findings.
+You have investigated an incident at PIET [Panipat Institute of Engineering & Technology] and have the following findings.
 
 Findings
 text
@@ -134,7 +134,7 @@ Risk Assessment Report:
 text
 RISK ASSESSMENT REPORT
 ====================
-Incident: ACME University - WS-FINANCE-01 Compromise
+Incident: PIET [Panipat Institute of Engineering & Technology] - WS-FINANCE-01 Compromise
 
 RISK ASSESSMENT:
 ┌─────────────────────┬──────────┐

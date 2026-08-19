@@ -140,7 +140,7 @@ MITRE ATT&CK Mapping Report:
 text
 MITRE ATT&CK MAPPING
 ===================
-Incident: ACME University - DarkVector Attack
+Incident: PIET [Panipat Institute of Engineering & Technology] - DarkVector Attack
 
 MAPPING SUMMARY:
 10 behaviors mapped to 9 techniques across 9 tactics

@@ -46,7 +46,7 @@ Objective
 Reconstruct an incident timeline from multiple log sources.
 
 Scenario
-ACME University has experienced a security incident. You have collected the following events from various sources. Your task is to reconstruct the timeline.
+PIET [Panipat Institute of Engineering & Technology] has experienced a security incident. You have collected the following events from various sources. Your task is to reconstruct the timeline.
 
 Dataset
 text

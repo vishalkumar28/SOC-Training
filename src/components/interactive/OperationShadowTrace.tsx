@@ -14,7 +14,7 @@ const workspaceSections = {
   evidence: ["15 failed logons from 203.0.113.45", "Successful RDP logon for jsmith at 09:28:15", "Encoded PowerShell execution at 09:29:00", "Payload downloaded to the temporary directory"],
   ioc: ["203.0.113.45 — external source IP", "jsmith — compromised account", "payload.exe — downloaded file", "T1059.001 — PowerShell execution"],
   cti: ["Check IP reputation and hosting history", "Search the payload hash across multiple sources", "Compare observed behavior with known campaigns", "Record source, timestamp, confidence, and limitations"],
-  darkweb: ["Validate the source reputation", "Compare sample data with known ACME formats", "Avoid treating an unverified claim as confirmed", "Escalate credible exposure for containment"],
+  darkweb: ["Validate the source reputation", "Compare sample data with known PIET formats", "Avoid treating an unverified claim as confirmed", "Escalate credible exposure for containment"],
   actor: ["Likely objective: credential access and persistence", "Observed access: brute force followed by RDP", "Observed tooling: PowerShell and scheduled task", "Attribution confidence: medium until corroborated"],
   ttp: ["Credential Access — Brute Force (T1110)", "Execution — PowerShell (T1059.001)", "Persistence — Scheduled Task (T1053.005)", "Command and Control — Application Layer Protocol (T1071)"],
   risk: ["Severity: High — confirmed account compromise", "Affected asset: faculty workstation", "Potential impact: student PII and research data", "Confidence: 78% based on correlated telemetry"],
@@ -40,7 +40,7 @@ export function OperationShadowTrace() {
                 <Crosshair className="mr-3 h-7 w-7 shrink-0 text-destructive sm:h-8 sm:w-8" />
                 OPERATION SHADOW TRACE
               </h1>
-              <p className="text-muted-foreground mt-1">Final Capstone Investigation - ACME University</p>
+              <p className="text-muted-foreground mt-1">Final Capstone Investigation - PIET [Panipat Institute of Engineering & Technology]</p>
             </div>
             <div className="grid grid-cols-2 gap-3 sm:flex sm:gap-4">
               <div className="bg-secondary p-3 rounded-lg border border-border">
@@ -106,7 +106,7 @@ export function OperationShadowTrace() {
                       <div className="space-y-4 text-sm">
                         <div>
                           <span className="text-muted-foreground block mb-1">Organization</span>
-                          <span className="font-medium">ACME University</span>
+                          <span className="font-medium">PIET [Panipat Institute of Engineering & Technology]</span>
                         </div>
                         <div>
                           <span className="text-muted-foreground block mb-1">Sector</span>

@@ -91,7 +91,7 @@ export default function Dashboard() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <TrackCard day="DAY 1" title="SOC & Security Monitoring" description="Work with Windows logs, Wazuh alerts, authentication attacks, IOCs, correlation, timelines, and response." href="/course/day1/soc-fundamentals-l1-analyst-workflow" icon={<ShieldCheck className="h-5 w-5" />} tone="primary" />
           <TrackCard day="DAY 2" title="Threat Intelligence" description="Enrich indicators, analyze malware and dark-web intelligence, profile actors, map TTPs, and assess risk." href="/course/day2/cyber-threat-intelligence-fundamentals" icon={<Target className="h-5 w-5" />} tone="accent" />
-          <TrackCard day="CAPSTONE" title="Final investigations" description="Apply the full workflow in the ACME University practical and Operation Shadow Trace investigations." href="/course/day1/final-practical-end-to-end-soc-investigation" icon={<ShieldAlert className="h-5 w-5" />} tone="warning" />
+          <TrackCard day="CAPSTONE" title="Final investigations" description="Apply the full workflow in the PIET [Panipat Institute of Engineering & Technology] practical and Operation Shadow Trace investigations." href="/course/day1/final-practical-end-to-end-soc-investigation" icon={<ShieldAlert className="h-5 w-5" />} tone="warning" />
         </div>
       </section>
 

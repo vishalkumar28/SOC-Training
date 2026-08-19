@@ -94,7 +94,7 @@ Objective
 Develop defensive recommendations based on incident findings.
 
 Scenario
-Based on the investigation of the DarkVector attack on ACME University, develop recommendations to prevent similar attacks.
+Based on the investigation of the DarkVector attack on PIET [Panipat Institute of Engineering & Technology], develop recommendations to prevent similar attacks.
 
 Attack Summary
 text
@@ -145,7 +145,7 @@ Defensive Recommendations Report:
 text
 DEFENSIVE RECOMMENDATIONS
 =======================
-Incident: DarkVector Attack on ACME University
+Incident: DarkVector Attack on PIET [Panipat Institute of Engineering & Technology]
 
 CRITICAL PRIORITY:
 1. Implement Multi-Factor Authentication (MFA) for all users

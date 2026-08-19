@@ -216,7 +216,7 @@ export default async function CoursePage(props: PageProps) {
       <article className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-2">Day 1 Capstone</h2>
-          <h1 className="text-4xl font-bold text-foreground mb-4">Investigation: ACME University</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Investigation: PIET [Panipat Institute of Engineering & Technology]</h1>
           <p className="text-xl text-muted-foreground">
             Apply everything you've learned today about SOC triage, Windows Event Logs, and Correlation to solve this incident.
           </p>

@@ -207,7 +207,7 @@ Objective
 Learn to navigate Windows Event Viewer, interpret security events, and identify suspicious activity.
 
 Scenario
-You are an L1 SOC analyst at ACME University. A user has reported that their account seems to have been accessed without their knowledge. You need to investigate Windows security logs to determine what happened.
+You are an L1 SOC analyst at PIET [Panipat Institute of Engineering & Technology]. A user has reported that their account seems to have been accessed without their knowledge. You need to investigate Windows security logs to determine what happened.
 
 Difficulty
 Beginner
