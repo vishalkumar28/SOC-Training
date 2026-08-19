@@ -42,14 +42,45 @@ export default function Dashboard() {
             Over the next two days, we will dive deep into the daily operations of a Security Operations Center (SOC). 
             You will not just learn theory, but will actively engage in practical exercises that simulate real-world attacks and investigations.
           </p>
-          <ul className="mt-6 space-y-4 text-sm leading-6 text-muted-foreground sm:text-base">
+          <ul className="mt-6 space-y-8 text-sm leading-6 text-muted-foreground sm:text-base">
             <li className="flex items-start">
               <span className="mr-3 mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary"><ChevronRight className="h-4 w-4" /></span>
-              <span><strong className="text-foreground">Day 1: SOC Fundamentals & Monitoring</strong> — We will focus on understanding the core SOC workflow, analyzing Windows Event Logs, identifying brute-force and authentication attacks, and using SIEM (Wazuh) for alert correlation and triage.</span>
+              <div className="flex-1">
+                <strong className="text-foreground">Day 1: SOC Fundamentals & Monitoring</strong>
+                <p className="mt-1 mb-4">We will focus on understanding the core SOC workflow, analyzing Windows Event Logs, identifying brute-force and authentication attacks, and using SIEM (Wazuh) for alert correlation and triage.</p>
+                <div className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />SOC Fundamentals & L1 Analyst Workflow</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />Windows Security Event Analysis</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />Authentication & Brute Force Detection</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />SIEM Concepts & Wazuh Alert Investigation</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />IOC Investigation & Threat Intelligence</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />Security Alert Correlation</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />Incident Timeline Reconstruction</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />SOC Incident Triage & Response</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-primary/50" />Final Practical: End-to-End Investigation</div>
+                </div>
+              </div>
             </li>
             <li className="flex items-start">
               <span className="mr-3 mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/20 text-accent"><ChevronRight className="h-4 w-4" /></span>
-              <span><strong className="text-foreground">Day 2: Threat Intelligence & Investigations</strong> — We will shift towards proactive defense, learning about Cyber Threat Intelligence (CTI), extracting IOCs from the dark web, profiling threat actors, mapping TTPs to the MITRE ATT&CK framework, and concluding with a massive end-to-end investigation.</span>
+              <div className="flex-1">
+                <strong className="text-foreground">Day 2: Threat Intelligence & Investigations</strong>
+                <p className="mt-1 mb-4">We will shift towards proactive defense, learning about Cyber Threat Intelligence (CTI), extracting IOCs from the dark web, profiling threat actors, mapping TTPs to the MITRE ATT&CK framework, and concluding with a massive end-to-end investigation.</p>
+                <div className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Cyber Threat Intelligence (CTI) Fundamentals</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Malware Hash Intelligence</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Threat Actor Profiling & TTP Analysis</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />MITRE ATT&CK Mapping</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Dark Web & Onion Intelligence</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Dark Web IOC Extraction</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Leak Validation & Corroboration</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Dark Web Intelligence & SOC Correlation</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />IOC Threat Hunting & Enrichment</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Incident Risk & Confidence Assessment</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Incident Response & Recommendations</div>
+                  <div className="flex items-center text-muted-foreground"><div className="mr-2 h-1.5 w-1.5 rounded-full bg-accent/50" />Operation Shadow Trace: Final Investigation</div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
