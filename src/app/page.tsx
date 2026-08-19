@@ -34,7 +34,28 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <section id="course-overview" className="mx-auto max-w-7xl px-4 py-12 sm:px-8 sm:py-16">
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-8 sm:py-16">
+        <div className="mb-8">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Introduction</p>
+          <h2 className="mt-2 text-2xl font-bold text-foreground sm:text-3xl">What to expect in these 2 days</h2>
+          <p className="mt-4 max-w-3xl text-base leading-7 text-muted-foreground">
+            Over the next two days, we will dive deep into the daily operations of a Security Operations Center (SOC). 
+            You will not just learn theory, but will actively engage in practical exercises that simulate real-world attacks and investigations.
+          </p>
+          <ul className="mt-6 space-y-4 text-sm leading-6 text-muted-foreground sm:text-base">
+            <li className="flex items-start">
+              <span className="mr-3 mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/20 text-primary"><ChevronRight className="h-4 w-4" /></span>
+              <span><strong className="text-foreground">Day 1: SOC Fundamentals & Monitoring</strong> — We will focus on understanding the core SOC workflow, analyzing Windows Event Logs, identifying brute-force and authentication attacks, and using SIEM (Wazuh) for alert correlation and triage.</span>
+            </li>
+            <li className="flex items-start">
+              <span className="mr-3 mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent/20 text-accent"><ChevronRight className="h-4 w-4" /></span>
+              <span><strong className="text-foreground">Day 2: Threat Intelligence & Investigations</strong> — We will shift towards proactive defense, learning about Cyber Threat Intelligence (CTI), extracting IOCs from the dark web, profiling threat actors, mapping TTPs to the MITRE ATT&CK framework, and concluding with a massive end-to-end investigation.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="course-overview" className="mx-auto max-w-7xl border-t border-border px-4 py-12 sm:px-8 sm:py-16">
         <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end"><div><p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Course overview</p><h2 className="mt-2 text-2xl font-bold text-foreground sm:text-3xl">Build the analyst foundation</h2></div><p className="max-w-md text-sm leading-6 text-muted-foreground">A guided path from first alert triage to threat intelligence and final incident reporting.</p></div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <TrackCard day="DAY 1" title="SOC & Security Monitoring" description="Work with Windows logs, Wazuh alerts, authentication attacks, IOCs, correlation, timelines, and response." href="/course/day1/soc-fundamentals-l1-analyst-workflow" icon={<ShieldCheck className="h-5 w-5" />} tone="primary" />
