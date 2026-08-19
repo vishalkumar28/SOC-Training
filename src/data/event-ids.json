@@ -1,0 +1,41 @@
+[
+  {
+    "id": "4624",
+    "name": "Successful Logon",
+    "meaning": "An account successfully logged on to a computer.",
+    "whyItMatters": "Tracks successful access. High volume might indicate successful brute force if preceded by 4625.",
+    "importantFields": [
+      "SubjectUserSid",
+      "TargetUserName",
+      "IpAddress",
+      "LogonType"
+    ],
+    "socUseCase": "Tracking lateral movement or successful brute force attacks.",
+    "suspiciousExample": "Logon type 3 from an unexpected external IP address.",
+    "benignExample": "Normal user logging into their workstation in the morning.",
+    "investigationQuestions": [
+      "Who logged in?",
+      "From where?",
+      "What is the logon type?"
+    ]
+  },
+  {
+    "id": "4625",
+    "name": "Failed Logon",
+    "meaning": "An account failed to log on.",
+    "whyItMatters": "Can indicate brute force or password spraying attacks.",
+    "importantFields": [
+      "TargetUserName",
+      "IpAddress",
+      "Status",
+      "SubStatus"
+    ],
+    "socUseCase": "Detecting brute force or password spraying.",
+    "suspiciousExample": "15 failed logons from the same IP address for different usernames in 1 minute.",
+    "benignExample": "User mistyped their password once.",
+    "investigationQuestions": [
+      "Is this a single user or multiple?",
+      "Is the source IP internal or external?"
+    ]
+  }
+]

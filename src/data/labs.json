@@ -1,0 +1,33 @@
+[
+  {
+    "id": "lab-1",
+    "number": 1,
+    "title": "Investigating Brute Force Activity",
+    "difficulty": "Beginner",
+    "estimatedTime": "30 mins",
+    "prerequisites": [
+      "Basic understanding of Windows Event Logs"
+    ],
+    "skills": [
+      "Log Analysis",
+      "Event ID 4625",
+      "Event ID 4624"
+    ],
+    "tools": [
+      "Event Viewer",
+      "SIEM Simulator"
+    ],
+    "scenario": "Multiple failed logins detected for user jsmith from IP 203.0.113.45.",
+    "dataset": "Windows Security Log excerpt",
+    "procedure": [
+      "Filter for Event ID 4625",
+      "Identify the source IP",
+      "Check if followed by Event ID 4624"
+    ],
+    "questions": [
+      "What time did the attack start?",
+      "Was the attack successful?"
+    ],
+    "expectedOutput": "The student should identify that the brute force attack was successful after 15 attempts."
+  }
+]

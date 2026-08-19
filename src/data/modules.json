@@ -1,0 +1,26 @@
+[
+  {
+    "id": "module-1",
+    "day": 1,
+    "title": "SOC Fundamentals & L1 Analyst Workflow",
+    "difficulty": "Beginner",
+    "estimatedTime": "45 mins",
+    "objectives": [
+      "Understand SOC operations and the L1 analyst workflow",
+      "Explain the role of each SOC tier (L1, L2, L3)"
+    ],
+    "whyItMatters": "SOC monitoring is the eyes and ears of an organization's cybersecurity program.",
+    "sections": [
+      {
+        "id": "sec-1.1",
+        "title": "1.1 What is a SOC?",
+        "explanation": {
+          "beginner": "A Security Operations Center (SOC) is a team of cybersecurity professionals who monitor, detect, investigate, and respond to cyber threats 24/7.",
+          "technical": "A SOC is a centralized function that combines People, Processes, and Technology.",
+          "analyst": "As a SOC analyst, I am responsible for monitoring security alerts, investigating suspicious activity, and escalating confirmed incidents.",
+          "hinglish": "SOC ek team hai jo continuously organization ke systems ko monitor karti hai, attacks detect karti hai, aur unka response handle karti hai. Jaise ek CCTV control room, lekin cyber security ke liye."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "term": "CTI\tCyber Threat Intelligence",
+    "definition": "evidence-based knowledge about threats"
+  },
+  {
+    "term": "IOC\tIndicator of Compromise",
+    "definition": "evidence of potential compromise"
+  },
+  {
+    "term": "IOA\tIndicator of Attack",
+    "definition": "behavioral pattern of an attack"
+  },
+  {
+    "term": "L1 Analyst\tTier 1 SOC analyst",
+    "definition": "performs alert triage"
+  },
+  {
+    "term": "L2 Analyst\tTier 2 SOC analyst",
+    "definition": "performs deep investigation"
+  },
+  {
+    "term": "L3 Analyst\tTier 3 SOC analyst",
+    "definition": "performs advanced investigation"
+  },
+  {
+    "term": "Tor\tThe Onion Router",
+    "definition": "a network for anonymous communication"
+  },
+  {
+    "term": "TTP\tTactics, Techniques, Procedures",
+    "definition": "how attackers operate"
+  },
+  {
+    "term": "[ ] Alert understood",
+    "definition": "What is the alert telling me?"
+  },
+  {
+    "term": "[ ] Alert validated",
+    "definition": "Is this a real security event?"
+  },
+  {
+    "term": "[ ] User identified",
+    "definition": "Which user account is involved?"
+  },
+  {
+    "term": "[ ] Host identified",
+    "definition": "Which system is affected?"
+  },
+  {
+    "term": "[ ] Source IP identified",
+    "definition": "Where did the activity come from?"
+  },
+  {
+    "term": "[ ] Destination identified",
+    "definition": "What is the target?"
+  },
+  {
+    "term": "[ ] Timeline established",
+    "definition": "When did events occur?"
+  },
+  {
+    "term": "[ ] IOC extracted",
+    "definition": "What are the indicators?"
+  },
+  {
+    "term": "[ ] IOC enriched",
+    "definition": "What context can I add?"
+  },
+  {
+    "term": "[ ] Related events searched",
+    "definition": "Are there other alerts?"
+  },
+  {
+    "term": "[ ] Scope assessed",
+    "definition": "How many systems are affected?"
+  },
+  {
+    "term": "[ ] Threat intelligence checked",
+    "definition": "What do we know about this threat?"
+  },
+  {
+    "term": "[ ] ATT&CK mapping completed",
+    "definition": "What TTPs are involved?"
+  },
+  {
+    "term": "[ ] Risk assessed",
+    "definition": "What is the potential impact?"
+  },
+  {
+    "term": "[ ] Confidence assessed",
+    "definition": "How certain are we?"
+  },
+  {
+    "term": "[ ] Response recommended",
+    "definition": "What actions should be taken?"
+  },
+  {
+    "term": "[ ] Evidence documented",
+    "definition": "Is everything recorded?"
+  },
+  {
+    "term": "[ ] Analyst conclusion written",
+    "definition": "What is the final assessment?"
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "day1": [
+    {
+      "title": "SOC FUNDAMENTALS & L1 ANALYST WORKFLOW",
+      "slug": "soc-fundamentals-l1-analyst-workflow",
+      "path": "/course/day1/soc-fundamentals-l1-analyst-workflow"
+    },
+    {
+      "title": "WINDOWS SECURITY EVENT ANALYSIS",
+      "slug": "windows-security-event-analysis",
+      "path": "/course/day1/windows-security-event-analysis"
+    },
+    {
+      "title": "AUTHENTICATION & BRUTE-FORCE DETECTION",
+      "slug": "authentication-brute-force-detection",
+      "path": "/course/day1/authentication-brute-force-detection"
+    },
+    {
+      "title": "SIEM CONCEPTS & WAZUH ALERT INVESTIGATION",
+      "slug": "siem-concepts-wazuh-alert-investigation",
+      "path": "/course/day1/siem-concepts-wazuh-alert-investigation"
+    },
+    {
+      "title": "IOC INVESTIGATION & THREAT INTELLIGENCE",
+      "slug": "ioc-investigation-threat-intelligence",
+      "path": "/course/day1/ioc-investigation-threat-intelligence"
+    },
+    {
+      "title": "SECURITY ALERT CORRELATION",
+      "slug": "security-alert-correlation",
+      "path": "/course/day1/security-alert-correlation"
+    },
+    {
+      "title": "INCIDENT TIMELINE RECONSTRUCTION",
+      "slug": "incident-timeline-reconstruction",
+      "path": "/course/day1/incident-timeline-reconstruction"
+    },
+    {
+      "title": "SOC INCIDENT TRIAGE & RESPONSE",
+      "slug": "soc-incident-triage-response",
+      "path": "/course/day1/soc-incident-triage-response"
+    },
+    {
+      "title": "Final Practical End-to-End SOC Investigation",
+      "slug": "final-practical-end-to-end-soc-investigation",
+      "path": "/course/day1/final-practical-end-to-end-soc-investigation"
+    }
+  ],
+  "day2": [
+    {
+      "title": "CYBER THREAT INTELLIGENCE FUNDAMENTALS",
+      "slug": "cyber-threat-intelligence-fundamentals",
+      "path": "/course/day2/cyber-threat-intelligence-fundamentals"
+    },
+    {
+      "title": "IOC THREAT HUNTING & ENRICHMENT",
+      "slug": "ioc-threat-hunting-enrichment",
+      "path": "/course/day2/ioc-threat-hunting-enrichment"
+    },
+    {
+      "title": "MALWARE & HASH INTELLIGENCE",
+      "slug": "malware-hash-intelligence",
+      "path": "/course/day2/malware-hash-intelligence"
+    },
+    {
+      "title": "DARK WEB & ONION INTELLIGENCE",
+      "slug": "dark-web-onion-intelligence",
+      "path": "/course/day2/dark-web-onion-intelligence"
+    },
+    {
+      "title": "DARK WEB IOC EXTRACTION",
+      "slug": "dark-web-ioc-extraction",
+      "path": "/course/day2/dark-web-ioc-extraction"
+    },
+    {
+      "title": "LEAK VALIDATION & INTELLIGENCE CORROBORATION",
+      "slug": "leak-validation-intelligence-corroboration",
+      "path": "/course/day2/leak-validation-intelligence-corroboration"
+    },
+    {
+      "title": "THREAT ACTOR PROFILING & TTP ANALYSIS",
+      "slug": "threat-actor-profiling-ttp-analysis",
+      "path": "/course/day2/threat-actor-profiling-ttp-analysis"
+    },
+    {
+      "title": "DARK WEB INTELLIGENCE \u2192 SOC CORRELATION",
+      "slug": "dark-web-intelligence-soc-correlation",
+      "path": "/course/day2/dark-web-intelligence-soc-correlation"
+    },
+    {
+      "title": "MITRE ATT&CK MAPPING",
+      "slug": "mitre-attck-mapping",
+      "path": "/course/day2/mitre-attck-mapping"
+    },
+    {
+      "title": "INCIDENT RISK & CONFIDENCE ASSESSMENT",
+      "slug": "incident-risk-confidence-assessment",
+      "path": "/course/day2/incident-risk-confidence-assessment"
+    },
+    {
+      "title": "INCIDENT RESPONSE & DEFENSIVE RECOMMENDATIONS",
+      "slug": "incident-response-defensive-recommendations",
+      "path": "/course/day2/incident-response-defensive-recommendations"
+    },
+    {
+      "title": "OPERATION SHADOW TRACE \u2013 FINAL INVESTIGATION",
+      "slug": "operation-shadow-trace-final-investigation",
+      "path": "/course/day2/operation-shadow-trace-final-investigation"
+    }
+  ]
+}
