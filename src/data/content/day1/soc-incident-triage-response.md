@@ -11,30 +11,11 @@ Critical Incident	Active breach with significant impact
 Decision Framework
 ```mermaid
 graph TD
-    A["┌─────────────────┐"]
-    A --> B["│     ALERT       │"]
-    B --> C["└────────┬────────┘"]
-    C --> D["Is activity expected?"]
-    D --> E["/          \"]
-    E --> F["YES           NO"]
-    F --> G["|             |"]
-    G --> H["┌────┘             ↓"]
-    H --> I["│           Is activity malicious?"]
-    I --> J["│            /          \"]
-    J --> K["│          YES           NO"]
-    K --> L["│           |             |"]
-    L --> M["│      ┌────┘             ↓"]
-    M --> N["│      │           ┌─────────────┐"]
-    N --> O["│      │           │   BENIGN    │"]
-    O --> P["│      │           └─────────────┘"]
-    P --> Q["│      ↓"]
-    Q --> R["│  ┌─────────────────────────────┐"]
-    R --> S["│  │   CONFIRMED INCIDENT         │"]
-    S --> T["│  └─────────────────────────────┘"]
-    T --> U["┌─────────────┐"]
-    U --> V["│ FALSE       │"]
-    V --> W["│ POSITIVE    │"]
-    W --> X["└─────────────┘"]
+    Alert[ALERT] --> Expected{Is activity expected?}
+    Expected -->|YES| FalsePositive[FALSE POSITIVE]
+    Expected -->|NO| Malicious{Is activity malicious?}
+    Malicious -->|NO| Benign[BENIGN]
+    Malicious -->|YES| ConfirmedIncident[CONFIRMED INCIDENT]
 ```
 8.2 Severity, Priority, and Impact
 Severity Assessment

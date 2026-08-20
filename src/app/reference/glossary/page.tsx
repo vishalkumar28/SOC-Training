@@ -47,7 +47,7 @@ export default function GlossaryPage() {
         ))}
         {filteredTerms.length === 0 && (
           <div className="col-span-full text-center py-12 text-muted-foreground">
-            No terms found matching "{query}".
+            No terms found matching &quot;{query}&quot;.
           </div>
         )}
       </div>

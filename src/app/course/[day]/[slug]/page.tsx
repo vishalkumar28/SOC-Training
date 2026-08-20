@@ -219,7 +219,7 @@ export default async function CoursePage(props: PageProps) {
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-2">Day 1 Capstone</h2>
           <h1 className="text-4xl font-bold text-foreground mb-4">Investigation: PIET [Panipat Institute of Engineering & Technology]</h1>
           <p className="text-xl text-muted-foreground">
-            Apply everything you've learned today about SOC triage, Windows Event Logs, and Correlation to solve this incident.
+            Apply everything you&apos;ve learned today about SOC triage, Windows Event Logs, and Correlation to solve this incident.
           </p>
         </div>
         <InvestigationConsole />

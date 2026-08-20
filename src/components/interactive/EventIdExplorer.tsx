@@ -104,7 +104,7 @@ export function EventIdExplorer() {
         ))}
         {filteredEvents.length === 0 && (
           <div className="text-center py-12 text-muted-foreground">
-            No Event IDs found matching "{query}".
+            No Event IDs found matching &quot;{query}&quot;.
           </div>
         )}
       </div>

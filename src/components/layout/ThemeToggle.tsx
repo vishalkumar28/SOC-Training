@@ -13,7 +13,7 @@ export function ThemeToggle({ compact = false }: { compact?: boolean }) {
     const dark = stored ? stored === "dark" : true;
     document.documentElement.classList.toggle("dark", dark);
     document.documentElement.classList.toggle("light", !dark);
-    setIsDark(dark);
+    setTimeout(() => setIsDark(dark), 0);
 
     const handleThemeChange = (event: Event) => {
       setIsDark((event as CustomEvent<boolean>).detail);

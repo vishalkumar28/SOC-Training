@@ -81,7 +81,7 @@ const mockScenario: Record<string, InvestigationStage> = {
     title: "Investigation: Post-Compromise Activity",
     alertDetails: (
       <div className="bg-secondary/50 p-4 rounded-md font-mono text-sm border border-border">
-        <p>The attacker now has access to the system as 'jsmith'.</p>
+        <p>The attacker now has access to the system as &apos;jsmith&apos;.</p>
         <p>You need to find out what they did next.</p>
       </div>
     ),

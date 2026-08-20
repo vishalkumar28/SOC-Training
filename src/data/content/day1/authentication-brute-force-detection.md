@@ -33,13 +33,9 @@ Credential Stuffing	✓ (from breach)	✓	✗
 Brute Force Detection
 ```mermaid
 graph TD
-    A["Failed attempts"]
-    A --> B["Followed by successful login"]
-    B --> C["From a different source IP?"]
-    C --> D["↓ \(YES\)"]
-    D --> E["During unusual hours?"]
-    E --> F["↓ \(YES\)"]
-    F --> G["→ COMPROMISED CREDENTIALS SUSPECTED"]
+    A[Failed attempts] -->|Followed by successful login| B{From a different source IP?}
+    B -->|YES| C{During unusual hours?}
+    C -->|YES| D[COMPROMISED CREDENTIALS SUSPECTED]
 ```
 3.4 Threshold Concepts
 Detection thresholds depend on:

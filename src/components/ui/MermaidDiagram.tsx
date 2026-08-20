@@ -14,7 +14,7 @@ export function MermaidDiagram({ chart }: { chart: string }) {
     // Initial theme setup
     const stored = window.localStorage.getItem("soc-academy-theme");
     const dark = stored ? stored === "dark" : true;
-    setIsDark(dark);
+    setTimeout(() => setIsDark(dark), 0);
 
     const handleThemeChange = (event: Event) => {
       setIsDark((event as CustomEvent<boolean>).detail);
