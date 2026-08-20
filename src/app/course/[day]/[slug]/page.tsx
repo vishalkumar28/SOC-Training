@@ -5,7 +5,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Card, CardContent } from '@/components/ui/card';
 import { BookOpen, Target, TerminalSquare, Info } from 'lucide-react';
-import { InvestigationConsole } from '@/components/interactive/InvestigationConsole';
 import { OperationShadowTrace } from '@/components/interactive/OperationShadowTrace';
 import { MermaidDiagram } from '@/components/ui/MermaidDiagram';
 
@@ -211,29 +210,6 @@ export default async function CoursePage(props: PageProps) {
   const title = titleMatch ? titleMatch[1] : slug.replace(/-/g, ' ');
   const markdownBody = normalizeMarkdown(content.replace(/^# .*$/m, '').trim());
 
-  // Handle specific interactive pages
-  if (slug === 'final-practical-end-to-end-soc-investigation') {
-    return (
-      <article className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto mb-10 max-w-3xl text-center">
-          <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-2">Day 1 Capstone</h2>
-          <h1 className="text-4xl font-bold text-foreground mb-4">Investigation: PIET [Panipat Institute of Engineering & Technology]</h1>
-          <p className="text-xl text-muted-foreground">
-            Apply everything you&apos;ve learned today about SOC triage, Windows Event Logs, and Correlation to solve this incident.
-          </p>
-        </div>
-        <InvestigationConsole />
-        <section className="course-content mt-12 rounded-xl border border-border bg-card/40 px-4 py-8 sm:px-8 sm:py-10">
-          <div className="mb-8 border-b border-border pb-6">
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-primary">Reference material</p>
-            <h2 className="text-2xl font-bold text-foreground sm:text-3xl">Complete Final Assessment Details</h2>
-            <p className="mt-2 text-muted-foreground">Use the dataset, investigation objectives, instructor solution, timeline, IOC register, and answer key to complete and review the exercise.</p>
-          </div>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdownBody}</ReactMarkdown>
-        </section>
-      </article>
-    );
-  }
 
   if (slug === 'operation-shadow-trace-final-investigation') {
     return (

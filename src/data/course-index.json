@@ -39,11 +39,6 @@
       "title": "SOC INCIDENT TRIAGE & RESPONSE",
       "slug": "soc-incident-triage-response",
       "path": "/course/day1/soc-incident-triage-response"
-    },
-    {
-      "title": "Final Practical End-to-End SOC Investigation",
-      "slug": "final-practical-end-to-end-soc-investigation",
-      "path": "/course/day1/final-practical-end-to-end-soc-investigation"
     }
   ],
   "day2": [

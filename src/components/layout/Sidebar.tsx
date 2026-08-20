@@ -11,7 +11,8 @@ import {
   Search,
   ChevronDown,
   ChevronRight,
-  Home
+  Home,
+  Mail
 } from "lucide-react";
 import { useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -43,6 +44,11 @@ const menuItems: SidebarItem[] = [
       { title: "MITRE ATT&CK", href: "/reference/mitre" },
       { title: "Glossary", href: "/reference/glossary" }
     ]
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+    icon: <Mail className="w-4 h-4" />
   }
 ];
 
