@@ -35,10 +35,10 @@ export function MermaidDiagram({ chart }: { chart: string }) {
         suppressErrorRendering: true,
       });
       
+      const id = `mermaid-${Math.random().toString(36).substring(7)}`;
       try {
         // Remove trailing newlines or artifacts
         const cleanChart = chart.trim();
-        const id = `mermaid-${Math.random().toString(36).substring(7)}`;
         const { svg } = await mermaid.render(id, cleanChart);
         if (isMounted) {
           setSvgContent(svg);

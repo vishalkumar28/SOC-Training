@@ -44,10 +44,24 @@ function normalizeMarkdown(source: string) {
   const output: string[] = [];
   let index = 0;
   let listMode = false;
+  let inCodeBlock = false;
 
   while (index < lines.length) {
     const line = lines[index];
     const trimmed = line.trim();
+
+    if (trimmed.startsWith('```')) {
+      inCodeBlock = !inCodeBlock;
+      output.push(line);
+      index += 1;
+      continue;
+    }
+
+    if (inCodeBlock) {
+      output.push(line);
+      index += 1;
+      continue;
+    }
 
     const inlineLab = trimmed.match(/^(Lab [A-Z]:\s+.+?)\s+(Objective|Environment|Scenario|Procedure):\s*(.+)$/);
     if (inlineLab) {
