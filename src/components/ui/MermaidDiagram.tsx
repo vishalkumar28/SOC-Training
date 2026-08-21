@@ -32,6 +32,7 @@ export function MermaidDiagram({ chart }: { chart: string }) {
         startOnLoad: false,
         theme: isDark ? "dark" : "default",
         fontFamily: "inherit",
+        suppressErrorRendering: true,
       });
       
       try {

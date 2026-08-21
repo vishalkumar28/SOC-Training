@@ -33,7 +33,7 @@ TTP Hierarchy
 ```mermaid
 graph TD
     A["TACTIC: Initial Access"]
-    A --> B["TECHNIQUE: Spearphishing Attachment \(T1566.001\)"]
+    A --> B["TECHNIQUE: Spearphishing Attachment (T1566.001)"]
     B --> C["PROCEDURE: Send email with malicious Word document"]
     C --> D["PROCEDURE: Document contains macro that downloads payload"]
     D --> E["PROCEDURE: Payload is Cobalt Strike beacon"]
@@ -205,4 +205,5 @@ Over-attribution – Not every attack is by a known group
 Ignoring TTPs – TTPs are more reliable than other indicators
 
 Not updating profiles – Threat actors evolve
+
 

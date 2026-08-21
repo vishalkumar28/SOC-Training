@@ -43,7 +43,7 @@ graph TD
     B --> C["Encrypts Data"]
     C --> D["Posts Leak on Dark Web"]
     D --> E["Negotiates Ransom"]
-    E --> F["If Not Paid → Data Published"]
+    E --> F["If Not Paid -> Data Published"]
 ```
 4.3 Defensive Dark Web Intelligence
 What is Defensive Dark Web Intelligence?
@@ -87,4 +87,5 @@ Confusing dark web with deep web – They are different
 Engaging with threat actors – Never interact with criminals
 
 Accessing illegal content – Stay within legal boundaries
+
 

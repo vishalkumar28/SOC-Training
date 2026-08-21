@@ -25,8 +25,8 @@ Focus	Known threats	Unknown and advanced threats
 Workflow
 ```mermaid
 graph TD
-    A["IOC \(from intelligence or analysis\)"]
-    A --> B["Enrich IOC \(add context\)"]
+    A["IOC (from intelligence or analysis)"]
+    A --> B["Enrich IOC (add context)"]
     B --> C["Search internal telemetry"]
     C --> D["Identify potential matches"]
     D --> E["Validate findings"]
@@ -179,4 +179,5 @@ Not validating findings – Ensure matches are real, not false positives
 Stopping too early – Continue hunting for lateral movement
 
 Not documenting – Record your hunting process
+
 
