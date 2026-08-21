@@ -60,12 +60,9 @@ graph TD
     B --> C["Check Source B"]
     C --> D["Check Source C"]
     D --> E["Compare Findings"]
-    E --> F["Consistent?"]
-    F --> G["/          \"]
-    G --> H["YES           NO"]
-    H --> I["|             |"]
-    I --> J["↓             ↓"]
-    J --> K["High Confidence  Low Confidence"]
+    E --> F{"Consistent?"}
+    F -->|YES| G["High Confidence"]
+    F -->|NO| H["Low Confidence"]
 ```
 PRACTICAL LAB 12: Leak Validation
 Lab Title: "Is This Real?"
