@@ -6,8 +6,8 @@ External threat intelligence is only valuable if it can be correlated with inter
 Correlation Workflow
 ```mermaid
 graph TD
-    A["External Intelligence \(IOC\)"]
-    A --> B["Enrich IOC \(add context\)"]
+    A["External Intelligence (IOC)"]
+    A --> B["Enrich IOC (add context)"]
     B --> C["Query Internal SIEM"]
     C --> D["Search Historical Telemetry"]
     D --> E["Identify Potential Matches"]

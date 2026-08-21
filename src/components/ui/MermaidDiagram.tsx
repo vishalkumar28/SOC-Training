@@ -44,8 +44,15 @@ export function MermaidDiagram({ chart }: { chart: string }) {
         }
       } catch (e) {
         console.error("Mermaid render error", e);
+        
+        // Mermaid often leaves the error SVG in the DOM if render fails
+        const errorElement = document.getElementById(id);
+        if (errorElement) errorElement.remove();
+        const dErrorElement = document.getElementById(`d${id}`);
+        if (dErrorElement) dErrorElement.remove();
+        
         if (isMounted) {
-          setSvgContent(`<div class="text-warning text-sm p-4 border border-warning/30 bg-warning/10 rounded-md">Error rendering diagram. Check console for details.</div>`);
+          setSvgContent(`<div class="text-warning text-sm p-4 border border-warning/30 bg-warning/10 rounded-md flex items-center justify-center h-full w-full">Error rendering diagram: Syntax error. Please check the markdown.</div>`);
         }
       }
     };

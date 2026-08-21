@@ -39,7 +39,7 @@ graph TD
     W --> X["Low	Limited evidence, source unreliable"]
     X --> Y["Medium	Some evidence, source moderately reliable"]
     Y --> Z["High	Strong evidence, source reliable"]
-    Z --> [["Confirmed	Independently verified"]
+    Z --> AA["Confirmed	Independently verified"]
 ```
 6.4 Intelligence Corroboration
 Why Corroboration Matters
